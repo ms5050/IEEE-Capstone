@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your PC</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="builder-page">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ready-pcs.html">Ready PCs</a>
+        <a href="M&M.html" class="active">Build Your Own PC</a>
+        <a href="about.html">About</a>
+    </nav>
+<div class="pc-builder-app">
+
+    <input type="radio" name="component" id="cpu-radio">
+    <input type="radio" name="component" id="ram-radio">
+    <input type="radio" name="component" id="gpu-radio">
+    <input type="radio" name="component" id="storage-radio">
+    <input type="radio" name="component" id="sound-radio">
+
+    <input type="checkbox" id="c-cpu1"> <input type="checkbox" id="c-cpu2">
+    <input type="checkbox" id="c-cpu3"> <input type="checkbox" id="c-cpu4">
+    <input type="checkbox" id="c-cpu5">
+    <input type="checkbox" id="c-ram1"> <input type="checkbox" id="c-ram2">
+    <input type="checkbox" id="c-ram3"> <input type="checkbox" id="c-ram4">
+    <input type="checkbox" id="c-gpu1"> <input type="checkbox" id="c-gpu2">
+    <input type="checkbox" id="c-gpu3"> <input type="checkbox" id="c-gpu4">
+    <input type="checkbox" id="c-gpu5">
+    <input type="checkbox" id="c-st1">  <input type="checkbox" id="c-st2">
+    <input type="checkbox" id="c-st3">  <input type="checkbox" id="c-st4">
+    <input type="checkbox" id="c-cool1"> <input type="checkbox" id="c-cool2">
+    <input type="checkbox" id="c-cool3"> <input type="checkbox" id="c-cool4">
+    <input type="checkbox" id="c-cool5">
+    <input type="checkbox" id="c-snd1"> <input type="checkbox" id="c-snd2">
+    <input type="checkbox" id="c-snd3"> <input type="checkbox" id="c-snd4">
+
+    <div class="scene">
+        <div class="motherboard">
+            <div class="circuit-lines"></div>
+            <label for="cpu-radio" class="slot cpu-slot">
+                <span class="pulse"></span>
+                <div class="tooltip">CPU Socket &amp; Coolers</div>
+            </label>
+            <label for="ram-radio" class="slot ram-slot">
+                <div class="ram-stick"></div><div class="ram-stick"></div>
+                <span class="pulse"></span>
+                <div class="tooltip">RAM Slots</div>
+            </label>
+            <label for="gpu-radio" class="slot gpu-slot">
+                <span class="pulse"></span>
+                <div class="tooltip">PCIe Slot (GPU)</div>
+            </label>
+            <label for="storage-radio" class="slot storage-slot">
+                <span class="pulse"></span>
+                <div class="tooltip">M.2 Slot (Storage)</div>
+            </label>
+            <label for="sound-radio" class="slot sound-slot">
+                <span class="pulse"></span>
+                <div class="tooltip">PCIe Slot (Sound Card)</div>
+            </label>
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <div class="panel-content">
+            <div class="welcome-msg">
+                <h2 style="font-family: 'Playfair Display', serif"> Ready to Build Your <span class="animated-underline" style="font-family: 'Playfair Display', serif">Dream?</span></h2>
+                <p>Click on the glowing spots on the motherboard to select and install components.</p>
+            </div>
+
+            <div class="details-box cpu-details">
+                <h3>Processor Options (CPU)</h3>
+                <div class="item-card">
+                    <img src="images/AMD Ryzen 7 7800X3D.png" alt="CPU1" class="AMD Ryzen 7 7800X3D.png-img">
+                     <div class="card-info">
+                      <h4>AMD Ryzen 7 7800X3D</h4>
+                      <div class="card-footer"><span class="price">22,000 EGP</span><label for="c-cpu1" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/13600k.png" alt="CPU2" class="Intel Core i5-13600K-img">
+                     <div class="card-info">
+                      <h4>Intel Core i5-13600K</h4>
+                      <div class="card-footer"><span class="price">16,500 EGP</span><label for="c-cpu2" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/AMD Ryzen 9 7950X.png" alt="CPU3" class="AMD Ryzen 9 7950X-img">
+                     <div class="card-info">
+                      <h4>AMD Ryzen 9 7950X</h4>
+                      <div class="card-footer"><span class="price">38,000 EGP</span><label for="c-cpu3" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/Intel Core i9-13900K.png" alt="CPU4" class="Intel Core i9-13900K-img">
+                     <div class="card-info">
+                      <h4>Intel Core i9-13900K</h4>
+                      <div class="card-footer"><span class="price">42,000 EGP</span><label for="c-cpu4" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/AMD Ryzen 5 7600X.png" alt="CPU5" class="AMD Ryzen 5 7600X-img">
+                     <div class="card-info">
+                      <h4>AMD Ryzen 5 7600X</h4>
+                      <div class="card-footer"><span class="price">12,500 EGP</span><label for="c-cpu5" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="details-box cooler-details">
+                <h3>CPU Cooler Options</h3>
+                <div class="item-card">
+                    <img src="images/Noctua NH-D15.png" alt="COOLER1" class="Noctua NH-D15-img">
+                     <div class="card-info">
+                      <h4>Noctua NH-D15</h4>
+                      <div class="card-footer"><span class="price">4,500 EGP</span><label for="c-cool1" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/Corsair H150i Elite 360mm AIO.png" alt="COOLER2" class="Corsair H150i Elite 360mm AIO-img">
+                     <div class="card-info">
+                      <h4>Corsair H150i Elite 360mm AIO</h4>
+                      <div class="card-footer"><span class="price">8,200 EGP</span><label for="c-cool2" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/DeepCool AK620.png" alt="COOLER3" class="DeepCool AK620-img">
+                     <div class="card-info">
+                      <h4>DeepCool AK620</h4>
+                      <div class="card-footer"><span class="price">2,900 EGP</span><label for="c-cool3" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/Kraken-X63-RGB-1.png" alt="COOLER4" class="Kraken-X63-RGB-1-img">
+                     <div class="card-info">
+                      <h4>NZXT Kraken X63 280mm AIO</h4>
+                      <div class="card-footer"><span class="price">6,800 EGP</span><label for="c-cool4" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/be_quiet_Dark_Rock_Pro_4__48537.png" alt="COOLER5" class="be_quiet_Dark_Rock_Pro_4__48537-img">
+                     <div class="card-info">
+                      <h4>be quiet! Dark Rock Pro 4</h4>
+                      <div class="card-footer"><span class="price">3,800 EGP</span><label for="c-cool5" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="details-box ram-details">
+                <h3>Memory Options (RAM)</h3>
+                <div class="item-card">
+                   <img src="images/32GB (2x16GB) DDR5 6000MHz.png" alt="RAM1" class="Product-materials/32GB (2x16GB) DDR5 6000MHz-img">
+                     <div class="card-info"> 
+                      <h4>32GB (2x16GB) DDR5 6000MHz</h4>
+                      <div class="card-footer"><span class="price">6,200 EGP</span><label for="c-ram1" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/Corsair Vengeance DDR5 16GB - 5200Mhz (2x8Gb).png" alt="RAM2" class="Product-materials/Corsair Vengeance DDR5 16GB - 5200Mhz (2x8Gb).png-img">
+                     <div class="card-info">
+                      <h4>16GB (2x8GB) DDR5 5200MHz</h4>
+                      <div class="card-footer"><span class="price">3,800 EGP</span><label for="c-ram2" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/G.SKILL Ripjaws M5 RGB DDR5 64GB - 6400MHz (2x32GB).png" alt="RAM3" class="Product-materials/G.SKILL Ripjaws M5 RGB DDR5 64GB - 6400MHz (2x32GB).png-img">
+                     <div class="card-info">
+                      <h4>64GB (2x32GB) DDR5 6400MHz</h4>
+                      <div class="card-footer"><span class="price">13,500 EGP</span><label for="c-ram3" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/32GB (2x16GB) DDR4 3600MHz.png" alt="RAM4" class="Product-materials/32GB (2x16GB) DDR4 3600MHz.png-img">
+                     <div class="card-info">
+                      <h4>32GB (2x16GB) DDR4 3600MHz</h4>
+                      <div class="card-footer"><span class="price">4,200 EGP</span><label for="c-ram4" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="details-box gpu-details">
+                <h3>Graphics Card Options (GPU)</h3>
+                <div class="item-card">
+                    <img src="images/GeForce-RTX™-4070-Ti-SUPER-GAMING-OC-16G-01.png" alt="GPU1" class="Product-materials/GeForce-RTX™-4070-Ti-SUPER-GAMING-OC-16G-01.png-img">
+                     <div class="card-info">
+                      <h4>RTX 4070 Ti Super 16GB</h4>
+                      <div class="card-footer"><span class="price">45,000 EGP</span><label for="c-gpu1" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/RTX 4060 Ti 8GB.png" alt="GPU2" class="Product-materials/RTX 4060 Ti 8GB.png-img">
+                     <div class="card-info">
+                      <h4>RTX 4060 Ti 8GB</h4>
+                      <div class="card-footer"><span class="price">24,000 EGP</span><label for="c-gpu2" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/Radeon RX 7900 XTX Phantom Gaming 24GB OC(L1).png" alt="GPU3" class="Product-materials/Radeon RX 7900 XTX Phantom Gaming 24GB OC(L1).png-img">
+                     <div class="card-info">
+                      <h4>AMD RX 7900 XTX 24GB</h4>
+                      <div class="card-footer"><span class="price">55,000 EGP</span><label for="c-gpu3" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/RTX 4090 24GB.png" alt="GPU4" class="Product-materials/RTX 4090 24GB.png-img">
+                     <div class="card-info">
+                      <h4>RTX 4090 24GB</h4>
+                      <div class="card-footer"><span class="price">95,000 EGP</span><label for="c-gpu4" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/AMD RX 7600 8GB.png" alt="GPU5" class="Product-materials/AMD RX 7600 8GB.png-img">
+                     <div class="card-info">
+                      <h4>AMD RX 7600 8GB</h4>
+                      <div class="card-footer"><span class="price">14,000 EGP</span><label for="c-gpu5" class="add-btn">+ Add</label></div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="details-box storage-details">
+                <h3>Storage Options (M.2 NVMe)</h3>
+                <div class="item-card">
+                    <img src="images/2TB Gen4 NVMe SSD.png" alt="SSD1" class="Product-materials/2TB Gen4 NVMe SSD.png-img">
+                     <div class="card-info">
+                      <h4>2TB Gen4 NVMe SSD</h4>
+                      <div class="card-footer"><span class="price">7,500 EGP</span><label for="c-st1" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/1TB Gen4 NVMe SSD.png" alt="SSD2" class="Product-materials/1TB Gen4 NVMe SSD.png-img"> 
+                     <div class="card-info">
+                      <h4>1TB Gen4 NVMe SSD</h4>
+                      <div class="card-footer"><span class="price">4,200 EGP</span><label for="c-st2" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/4TB Gen4 NVMe SSD.png" alt="SSD3" class="Product-materials/4TB Gen4 NVMe SSD.png-img"> 
+                     <div class="card-info">
+                      <h4>4TB Gen4 NVMe SSD</h4>
+                      <div class="card-footer"><span class="price">14,000 EGP</span><label for="c-st3" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/1TB Gen3 NVMe SSD.png" alt="SSD4" class="Product-materials/1TB Gen3 NVMe SSD.png-img"> 
+                     <div class="card-info"> 
+                      <h4>1TB Gen3 NVMe SSD</h4>
+                      <div class="card-footer"><span class="price">2,800 EGP</span><label for="c-st4" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-box sound-details">
+                <h3>Sound Card Options</h3>
+                <div class="item-card">
+                    <img src="images/Creative Sound Blaster AE-9.png" alt="SND1" class="Product-materials/Creative Sound Blaster AE-9.png-img"> 
+                     <div class="card-info"> 
+                     <h4>Creative Sound Blaster AE-9</h4>
+                     <div class="card-footer"><span class="price">9,500 EGP</span><label for="c-snd1" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/ASUS Xonar AE.png" alt="SND2" class="Product-materials/ASUS Xonar AE.png-img"> 
+                     <div class="card-info"> 
+                     <h4>ASUS Xonar AE</h4>
+                     <div class="card-footer"><span class="price">3,200 EGP</span><label for="c-snd2" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/Creative Sound Blaster Z SE.png" alt="SND3" class="Product-materials/Creative Sound Blaster Z SE.png-img"> 
+                     <div class="card-info"> 
+                     <h4>Creative Sound Blaster Z SE</h4>
+                     <div class="card-footer"><span class="price">4,800 EGP</span><label for="c-snd3" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/EVGA Nu Audio Pro.png" alt="SND4" class="Product-materials/EVGA Nu Audio Pro.png-img"> 
+                     <div class="card-info"> 
+                     <h4>EVGA Nu Audio Pro</h4>
+                     <div class="card-footer"><span class="price">7,200 EGP</span><label for="c-snd4" class="add-btn">+ Add</label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-panel">
+            <div class="cart-header">
+                <div class="cart-title">Build Cart</div>
+            </div>
+            <div class="cart-items">
+                <div class="cart-empty">No components selected yet.</div>
+                
+                <div class="cart-row" id="cr-cpu1">
+                    <div class="cart-row-info"><span class="cart-row-name">AMD Ryzen 7 7800X3D</span><span class="cart-row-cat">CPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">22,000 EGP</span><label for="c-cpu1" class="remove-lbl" title="Remove">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cpu2">
+                    <div class="cart-row-info"><span class="cart-row-name">Intel Core i5-13600K</span><span class="cart-row-cat">CPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">16,500 EGP</span><label for="c-cpu2" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cpu3">
+                    <div class="cart-row-info"><span class="cart-row-name">AMD Ryzen 9 7950X</span><span class="cart-row-cat">CPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">38,000 EGP</span><label for="c-cpu3" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cpu4">
+                    <div class="cart-row-info"><span class="cart-row-name">Intel Core i9-13900K</span><span class="cart-row-cat">CPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">42,000 EGP</span><label for="c-cpu4" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cpu5">
+                    <div class="cart-row-info"><span class="cart-row-name">AMD Ryzen 5 7600X</span><span class="cart-row-cat">CPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">12,500 EGP</span><label for="c-cpu5" class="remove-lbl">X</label></div>
+                </div>
+
+                <div class="cart-row" id="cr-cool1">
+                    <div class="cart-row-info"><span class="cart-row-name">Noctua NH-D15</span><span class="cart-row-cat">Cooler</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">4,500 EGP</span><label for="c-cool1" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cool2">
+                    <div class="cart-row-info"><span class="cart-row-name">Corsair H150i Elite 360mm</span><span class="cart-row-cat">Cooler</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">8,200 EGP</span><label for="c-cool2" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cool3">
+                    <div class="cart-row-info"><span class="cart-row-name">DeepCool AK620</span><span class="cart-row-cat">Cooler</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">2,900 EGP</span><label for="c-cool3" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cool4">
+                    <div class="cart-row-info"><span class="cart-row-name">NZXT Kraken X63 280mm</span><span class="cart-row-cat">Cooler</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">6,800 EGP</span><label for="c-cool4" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-cool5">
+                    <div class="cart-row-info"><span class="cart-row-name">be quiet! Dark Rock Pro 4</span><span class="cart-row-cat">Cooler</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">3,800 EGP</span><label for="c-cool5" class="remove-lbl">X</label></div>
+                </div>
+
+                <div class="cart-row" id="cr-ram1">
+                    <div class="cart-row-info"><span class="cart-row-name">32GB DDR5 6000MHz</span><span class="cart-row-cat">RAM</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">6,200 EGP</span><label for="c-ram1" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-ram2">
+                    <div class="cart-row-info"><span class="cart-row-name">16GB DDR5 5200MHz</span><span class="cart-row-cat">RAM</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">3,800 EGP</span><label for="c-ram2" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-ram3">
+                    <div class="cart-row-info"><span class="cart-row-name">64GB DDR5 6400MHz</span><span class="cart-row-cat">RAM</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">13,500 EGP</span><label for="c-ram3" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-ram4">
+                    <div class="cart-row-info"><span class="cart-row-name">32GB DDR4 3600MHz</span><span class="cart-row-cat">RAM</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">4,200 EGP</span><label for="c-ram4" class="remove-lbl">X</label></div>
+                </div>
+
+                <div class="cart-row" id="cr-gpu1">
+                    <div class="cart-row-info"><span class="cart-row-name">RTX 4070 Ti Super 16GB</span><span class="cart-row-cat">GPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">45,000 EGP</span><label for="c-gpu1" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-gpu2">
+                    <div class="cart-row-info"><span class="cart-row-name">RTX 4060 Ti 8GB</span><span class="cart-row-cat">GPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">24,000 EGP</span><label for="c-gpu2" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-gpu3">
+                    <div class="cart-row-info"><span class="cart-row-name">AMD RX 7900 XTX 24GB</span><span class="cart-row-cat">GPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">55,000 EGP</span><label for="c-gpu3" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-gpu4">
+                    <div class="cart-row-info"><span class="cart-row-name">RTX 4090 24GB</span><span class="cart-row-cat">GPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">95,000 EGP</span><label for="c-gpu4" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-gpu5">
+                    <div class="cart-row-info"><span class="cart-row-name">AMD RX 7600 8GB</span><span class="cart-row-cat">GPU</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">14,000 EGP</span><label for="c-gpu5" class="remove-lbl">X</label></div>
+                </div>
+
+                <div class="cart-row" id="cr-st1">
+                    <div class="cart-row-info"><span class="cart-row-name">2TB Gen4 NVMe SSD</span><span class="cart-row-cat">Storage</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">7,500 EGP</span><label for="c-st1" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-st2">
+                    <div class="cart-row-info"><span class="cart-row-name">1TB Gen4 NVMe SSD</span><span class="cart-row-cat">Storage</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">4,200 EGP</span><label for="c-st2" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-st3">
+                    <div class="cart-row-info"><span class="cart-row-name">4TB Gen4 NVMe SSD</span><span class="cart-row-cat">Storage</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">14,000 EGP</span><label for="c-st3" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-st4">
+                    <div class="cart-row-info"><span class="cart-row-name">1TB Gen3 NVMe SSD</span><span class="cart-row-cat">Storage</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">2,800 EGP</span><label for="c-st4" class="remove-lbl">X</label></div>
+                </div>
+
+                <div class="cart-row" id="cr-snd1">
+                    <div class="cart-row-info"><span class="cart-row-name">Sound Blaster AE-9</span><span class="cart-row-cat">Sound Card</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">9,500 EGP</span><label for="c-snd1" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-snd2">
+                    <div class="cart-row-info"><span class="cart-row-name">ASUS Xonar AE</span><span class="cart-row-cat">Sound Card</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">3,200 EGP</span><label for="c-snd2" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-snd3">
+                    <div class="cart-row-info"><span class="cart-row-name">Sound Blaster Z SE</span><span class="cart-row-cat">Sound Card</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">4,800 EGP</span><label for="c-snd3" class="remove-lbl">X</label></div>
+                </div>
+                <div class="cart-row" id="cr-snd4">
+                    <div class="cart-row-info"><span class="cart-row-name">EVGA Nu Audio Pro</span><span class="cart-row-cat">Sound Card</span></div>
+                    <div class="cart-row-right"><span class="cart-row-price">7,200 EGP</span><label for="c-snd4" class="remove-lbl">X</label></div>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <div>
+                    <div class="cart-total-label">Selected items shown above</div>
+                </div>
+                <button class="checkout-btn">Checkout </button>
+            </div>
+            
+            <div class="copyright">© 2026 PC Store. All rights reserved.</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

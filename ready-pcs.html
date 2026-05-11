@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready PCs - My PC Store</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="ready-page">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ready-pcs.html" class="active">Ready PCs</a>
+        <a href="M&M.html">Build Your Own PC</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        <h1>Pre-Built Gaming PCs</h1>
+        <p class="subtitle">Choose from our selection of high-performance systems, all tested and ready to ship</p>
+        
+        <div class="grid">
+            
+            <div class="card">
+                <div class="card-image"><img class="img" src="images/Entry.png" alt="💻"></div>
+                <div class="card-content">
+                    <h2>The Entry</h2>
+                    <div class="card-badge">BUDGET FRIENDLY</div>
+
+                    <div class="specs">
+                        <div class="specs-title">Specifications:</div>
+                        <p>Intel Core i5-12400<br>16GB DDR4 RAM<br>GTX 1660 Super 6GB<br>500GB SSD<br>550W PSU</p>
+                    </div>
+
+                    <div class="price">32,500 EGP</div>
+                    <div class="price-label">Egyptian Pound</div>
+                    <a href="#details-entry" class="btn">View Details</a>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-image"><img class="img" src="images/Performer.png" alt="🎮"></div>
+                <div class="card-content">
+                    <h2>The Performer</h2>
+                    <div class="card-badge">MOST POPULAR</div>
+
+                    <div class="specs">
+                        <div class="specs-title">Specifications:</div>
+                        <p>AMD Ryzen 5 5600X<br>32GB DDR4 RAM<br>RTX 3060 Ti 8GB<br>1TB NVMe SSD<br>750W PSU</p>
+                    </div>
+
+                    <div class="price">58,900 EGP</div>
+                    <div class="price-label">Egyptian Pound</div>
+                    <a href="#details-performer" class="btn">View Details</a>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-image"><img class="img" src="images/Beast.png" alt="⚡"></div>
+                <div class="card-content">
+                    <h2>The Beast</h2>
+                    <div class="card-badge">PREMIUM</div>
+
+                    <div class="specs">
+                        <div class="specs-title">Specifications:</div>
+                        <p>Intel Core i9-12900K<br>64GB DDR5 RAM<br>RTX 4080 12GB<br>2TB NVMe SSD<br>1000W PSU</p>
+                    </div>
+
+                    <div class="price">145,000 EGP</div>
+                    <div class="price-label">Egyptian Pound</div>
+                    <a href="#details-beast" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-entry" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <div style="width: 100%; height: 200px; overflow: hidden; margin-bottom: 20px; border-radius: 5px;"><img class="img" src="images/Entry.png" alt="Entry PC" style="width: 100%; height: 100%; object-fit: contain;"></div>
+            <h2>The Entry PC</h2>
+            <div class="modal-specs">
+                <strong>Full Specifications:</strong><br><br>
+                CPU: Intel Core i5-12400 (6-core, 3.3 GHz)<br>
+                RAM: 16GB DDR4 3200MHz<br>
+                GPU: NVIDIA GTX 1660 Super 6GB GDDR6<br>
+                Storage: 500GB NVMe SSD<br>
+                PSU: 550W 80+ Bronze<br>
+                Case: Mid-tower ATX with RGB fans<br>
+                Cooling: Stock cooler + Case air flow<br>
+                OS: Windows 11 Home (60 days trial)
+            </div>
+            <div class="modal-price">32,500 EGP</div>
+            <div class="modal-buttons">
+                <a href="#" class="btn-checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-performer" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <div style="width: 100%; height: 200px; overflow: hidden; margin-bottom: 20px; border-radius: 5px;"><img class="img" src="images/Performer.png" alt="Performer PC" style="width: 100%; height: 100%; object-fit: contain;"></div>
+            <h2>The Performer PC</h2>
+            <div class="modal-specs">
+                <strong>Full Specifications:</strong><br><br>
+                CPU: AMD Ryzen 5 5600X (6-core, 3.7 GHz)<br>
+                RAM: 32GB DDR4 3600MHz<br>
+                GPU: NVIDIA RTX 3060 Ti 8GB GDDR6<br>
+                Storage: 1TB NVMe SSD<br>
+                PSU: 750W 80+ Gold<br>
+                Case: ATX Tempered Glass with 6 RGB fans<br>
+                Cooling: Arctic Liquid Cooler 240mm<br>
+                OS: Windows 11 Pro
+            </div>
+            <div class="modal-price">58,900 EGP</div>
+            <div class="modal-buttons">
+                <a href="#" class="btn-checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-beast" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <div style="width: 100%; height: 200px; overflow: hidden; margin-bottom: 20px; border-radius: 5px;"><img class="img" src="images/Beast.png" alt="Beast PC" style="width: 100%; height: 100%; object-fit: contain;"></div>
+            <h2>The Beast PC</h2>
+            <div class="modal-specs">
+                <strong>Full Specifications:</strong><br><br>
+                CPU: Intel Core i9-12900K (16-core, 3.2 GHz)<br>
+                RAM: 64GB DDR5 6000MHz<br>
+                GPU: NVIDIA RTX 4080 12GB GDDR6X<br>
+                Storage: 2TB NVMe SSD (Gen 4)<br>
+                PSU: 1000W 80+ Platinum<br>
+                Case: Full Tower Tempered Glass with 9 RGB fans<br>
+                Cooling: NZXT Kraaken X63 280mm Liquid Cooler<br>
+                OS: Windows 11 Pro
+            </div>
+            <div class="modal-price">145,000 EGP</div>
+            <div class="modal-buttons">
+                <a href="#" class="btn-checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 PC Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
