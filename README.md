@@ -39,7 +39,7 @@ A multi-page e-commerce website for a custom PC store based in Egypt. Users can 
 
 ## How to Run
 
-**Live Preview:** [https://ieee-must.netlify.app/](https://ieee-must.netlify.app/)
+**Live Preview:** <a href="https://ieee-must.netlify.app/" target="_blank">https://ieee-must.netlify.app/</a>
 
 Or open `index.html` locally in any modern browser — no server or build step required.
 
